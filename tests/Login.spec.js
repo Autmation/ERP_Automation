@@ -3,7 +3,7 @@ const { test, expect } = require("@playwright/test");
 test.use({viewport:{width:1520,height:847}})
 
 test("User Login", async function ({ page }) {
-
+ 
   await page.goto("https://www.moebel-kraft.de/");
 
   await page.locator("div[data-accept-action='all'] button[type='button']").click();
